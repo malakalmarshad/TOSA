@@ -335,7 +335,7 @@ labels_list #print labels after one hot encoding
 
 
 x_train, x_test, y_train, y_test = model_selection.train_test_split(
-    series_list, labels_list, test_size=0.2 ,#shuffle=False#shuffle=True #random_state=42,
+    series_list, labels_list, test_size=0.2 , #random_state=42,
 )
 
 print(
@@ -617,7 +617,6 @@ history= model.fit(
     epochs=300, #200
     batch_size=batch_size,#32
     callbacks=callbacks,
-    #shuffle=False,
     class_weight=weight_dict,
 )
 
